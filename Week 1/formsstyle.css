@@ -1,0 +1,21 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+h1 {
+  color: blue;
+  font-size: 36px;
+  text-align: center;
+}
+
+td {
+  background-color: brown;
+}
+#registrationdate,
+#userMail {
+  background-color: green;
+}
+
+Div > span {
+  font-weight: bold;
+}

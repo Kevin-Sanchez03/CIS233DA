@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="formsstyle.css" />
+  </head>
+  <body>
+    <h1>Form Elements Examples</h1>
+    <form>
+      <table>
+        <tr>
+          <td><input type="text" id="firstname" placeholder="First Name" /></td>
+          <td><input type="text" id="lastname" placeholder="Last Name" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" id="newbutton" value="new" /></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" id="truefalse" />
+            I am not a robot
+          </td>
+        </tr>
+        <tr>
+          <td><input type="date" id="registrationdate" /></td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="email"
+              id="userMail"
+              required
+              placeholder="eMail address"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><input type="number" id="age" /></td>
+        </tr>
+        <tr>
+          <td><input type="file" id="uploadFile" /></td>
+        </tr>
+        <tr>
+          <td>
+            Do you like pass fail?
+            <input type="radio" id="no" name="gradeType" />No
+            <input type="radio" id="yes" name="gradeType" />Yes
+            <input type="radio" id="neutral" name="gradeType" />Dunno
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <select name="" id="students" style="width: 200px">
+              <option value="Abdul">Abdul</option>
+              <option value="Alan">Alan</option>
+              <option value="Devan">Devan</option>
+              <option value="Gavin">Gavin</option>
+              <option value="Irvin">Irvin</option>
+              <option value="Jahaziel">Jahaziel</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <textarea
+              name=""
+              id="bigText"
+              placeholder="Type a lot of stuff here"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="submit" />
+          </td>
+          <td>
+            <input type="reset" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <div id="firstDiv">
+      This is the text that i types in our<span>CIS233DA</span>class.
+    </div>
+    <p>
+      <div>
+        lazy yellow The quick brown fox jumped over the
+        <span>lazy yellow</span> fox
+      </div>
+      Now is the times for all good men to come to <span>aid</span>of thier
+      country
+    </p>
+  </body>
+</html>
