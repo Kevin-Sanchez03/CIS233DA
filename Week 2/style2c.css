@@ -1,0 +1,163 @@
+@font-face {
+  font-family: sans-serif;
+  src: url(fonts/glacial-indefference/GlacialIndifference-Regular.otf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  margin: auto;
+}
+main {
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url(images/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 80vh;
+  color: #fcf6f5;
+}
+/* .background {
+  z-index: 0;
+  background-image: url(images/);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+} */
+.title {
+  position: relative;
+  padding: 0.5em 1em;
+  background-color: rgba(43, 174, 102, 0.6);
+}
+footer {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  background-color: #2bae66;
+  color: #fcf6f5;
+  font-size: x-large;
+  /* height: 20vh; */
+}
+
+a {
+  text-decoration: none;
+  color: #fcf6f5;
+  padding: 0.5em;
+}
+
+li,
+ul {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#links a {
+  color: white;
+  text-decoration: none;
+}
+
+#links a:visited {
+  color: white;
+}
+#social {
+  list-style-type: none;
+}
+#social li {
+  display: inline-block;
+}
+#images {
+  text-align: center;
+}
+.left-container {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.right-container > img {
+  width: 12em;
+  height: 12em;
+}
+
+/* calender page */
+
+#calender {
+  display: grid;
+  grid-template-columns: repeat(7, 75px);
+  background-color: black;
+  color: white;
+  gap: 6px;
+}
+
+month {
+  grid-column: span 7;
+  background-color: #2bada7;
+  height: 30px;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+leader,
+trailer {
+  background-color: #fcf6f5;
+}
+leader,
+trailer,
+day {
+  border-radius: 5px;
+  height: 60px;
+  width: 100%;
+}
+leader {
+  grid-column: span 3;
+}
+trailer {
+  grid-column: span 4;
+}
+day {
+  box-sizing: border-box;
+  text-align: right;
+  padding: 2px 4px 0px;
+  background-color: #2bae66;
+}
+#valentine {
+  background-color: #fcf6f5;
+  color: #2bae66;
+}
+
+/* Audio page */
+
+.audio {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 1em;
+  background-color: rgba(43, 174, 102, 0.6);
+}
