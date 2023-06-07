@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Images</title>
+  </head>
+  <body>
+    <img
+      src="./images/bg-500.jpg"
+      srcset="
+        ./images/bg-500.jpg   500w,
+        ./images/bg-1000.jpg 1000w,
+        ./images/bg-2000.jpg 2000w
+      "
+      alt="Background image of fall landscape around a lake"
+    />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/phWxA89Dy94"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+    <audio
+      controls
+      src="media/Tyler_The_Creator_See_You_Again_feat_Kali_Uch.mp3"
+    />
+  </body>
+</html>
