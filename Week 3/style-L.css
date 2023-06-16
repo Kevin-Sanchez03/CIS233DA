@@ -11,6 +11,10 @@
   --font-family: "Inter", sans-serif;
 }
 
+* {
+  font-family: var(--font-family);
+}
+
 @media screen and (min-width: 1024px) {
   nav {
     display: inline;
