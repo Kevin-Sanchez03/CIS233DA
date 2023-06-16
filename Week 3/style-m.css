@@ -1,0 +1,21 @@
+:root {
+  --color-primary: #93c2db;
+  --color-primary-alt: #ff8ae2;
+  --color-secondary: white;
+  --color-tertiary: #3385ff;
+  --color-background: #0d304e;
+  --color-background-dark: #072540;
+  --color-text: #93c2db;
+  --color-light: #fff;
+  --color-anchor: #93c2db;
+  --font-family: "Inter", sans-serif;
+}
+
+@media screen and (min-width: 600px) {
+  nav {
+    display: inline;
+  }
+  #small {
+    display: none;
+  }
+}
