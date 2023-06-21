@@ -33,27 +33,40 @@
     <div id="mode">PARK</div>
     <div id="temp">98 F&deg;</div>
     <div id="time"></div>
+
+    <!-- Parking Brake -->
     <img
       src="./assets/images/bttn_park_1.PNG"
       id="bttn_park"
       alt="parking brake button"
+      onclick="parkBrake()"
     />
+
+    <!-- Track Control -->
     <img
       src="./assets/images/bttn_trac_1.PNG"
       id="bttn_trac"
       alt="traction control button"
+      onclick="tracButton()"
     />
+
+    <!-- Battery -->
     <img
       src="./assets/images/bttn_batt_0.PNG"
       id="bttn_batt"
       alt="charge battery button"
+      onclick="battButton()"
     />
+
+    <!-- Gas -->
     <img
       src="./assets/images/bttn_gas_0.PNG"
       id="bttn_gas"
       alt="fill gas button"
       onclick="getGas()"
     />
+
+    <!-- Mode shifter -->
     <img
       src="./assets/images/shifter.png"
       id="bttn_shifter"

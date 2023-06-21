@@ -10,7 +10,7 @@
   --color-anchor: #93c2db;
   --font-family: "Inter", sans-serif;
 }
-
+ 
 * {
   font-family: var(--font-family);
 }
