@@ -48,6 +48,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, 150px);
     grid-template-rows: repeat(8, 150px);
+    justify-content: center;
     gap: 2em 2em;
     border: solid var(--color-primary-alt);
     background-color: var(--color-background);
