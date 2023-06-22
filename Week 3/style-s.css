@@ -47,8 +47,8 @@ select {
   margin-top: 1em;
   padding: 2em;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 150px);
-  grid-template-rows: repeat(15, 160px);
+  grid-template-columns: repeat(auto-fit, 125px);
+  grid-template-rows: repeat(auto-fit, 130px);
   justify-content: center;
   gap: 2em 2em;
   border: solid var(--color-primary-alt);
@@ -62,7 +62,7 @@ select {
 }
 .item-1 {
   background-color: var(--color-primary);
-  border-radius: 50%;
+  border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +70,7 @@ select {
 }
 .item-2 {
   background-color: var(--color-primary);
-  border-radius: 50%;
+  border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,15 +119,15 @@ select {
   filter: none;
 }
 .item > img {
-  height: 330px;
-  width: 340px;
+  height: 310px;
+  width: 315px;
   background-color: none;
   padding: 0;
   filter: none;
 }
 iframe {
-  height: 330px;
-  width: 330px;
+  height: 310px;
+  width: 310px;
 }
 
 nav {
