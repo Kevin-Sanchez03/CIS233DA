@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chuck Norris Jokes</title>
+  </head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #joke {
+      background-color: #fff;
+      padding: 20px;
+      color: #333;
+      font-size: 20px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <body>
+    <h1>Chuck Norris Jokes</h1>
+    <button id="getJokeButton">Get Joke</button>
+    <p id="joke"></p>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var getJokeButton = document.getElementById("getJokeButton");
+        var jokeElement = document.getElementById("joke");
+
+        getJokeButton.addEventListener("click", function () {
+          var xhr = new XMLHttpRequest();
+          xhr.open("GET", "https://api.chucknorris.io/jokes/random", true);
+
+          xhr.onload = function () {
+            if (xhr.status === 200) {
+              var response = JSON.parse(xhr.responseText);
+              jokeElement.textContent = response.value;
+            } else {
+              alert("Failed to fetch Chuck Norris joke.");
+            }
+          };
+
+          xhr.onerror = function () {
+            alert("Failed to fetch Chuck Norris joke.");
+          };
+
+          xhr.send();
+        });
+      });
+    </script>
+  </body>
+</html>
