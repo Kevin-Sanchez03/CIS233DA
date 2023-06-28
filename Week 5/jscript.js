@@ -1,38 +1,38 @@
-// necessary DOM elements
-const navLinks = document.querySelectorAll(".navObj");
-const citySelect = document.getElementById("city-select");
-const cityContainers = document.querySelectorAll(".main-container");
+function setCity(id) {
+  var navObj, item, navImg;
 
-//event listeners to navigation links
-navLinks.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
+  for (let x = 1; x <= 5; x++) {
+    let navObj = document.getElementById(`city${x}`);
+    navObj.style.display = "none";
+  }
 
-    // target city ID from the clicked link's ID
-    const targetCity = link.id.slice(3); // Remove 'obj' from the ID
+  switch (id) {
+    case 1:
+      city = "sedona";
+      document.getElementById("city1").style.display = "inline";
+      break;
+    case 2:
+      city = "denver";
+      document.getElementById("city2").style.display = "inline";
 
-    // Show the target city's container and hide others
-    cityContainers.forEach((container) => {
-      if (container.id === targetCity) {
-        container.style.display = "block";
-      } else {
-        container.style.display = "none";
-      }
-    });
-  });
-});
+      break;
+    case 3:
+      city = "seattle";
+      document.getElementById("city3").style.display = "inline";
 
-// event listener to city select dropdown
-citySelect.addEventListener("change", (event) => {
-  // Get the selected city value
-  const selectedCity = event.target.value;
+      break;
+    case 4:
+      city = "honolulu";
+      document.getElementById("city4").style.display = "inline";
 
-  // Show the selected city's container and hide others
-  cityContainers.forEach((container) => {
-    if (container.id === selectedCity) {
-      container.style.display = "block";
-    } else {
-      container.style.display = "none";
-    }
-  });
-});
+      break;
+    case 5:
+      city = "portland";
+      document.getElementById("city5").style.display = "inline";
+
+      break;
+  }
+
+  document.getElementById("cityName").innerText = city;
+  getWeather();
+}

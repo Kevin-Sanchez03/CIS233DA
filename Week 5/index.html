@@ -11,7 +11,14 @@
   <body>
     <!-- Navigation -->
     <nav>
-      <a href="#" aria-label="link to sedona page" class="navObj" id="obj1">
+      <a
+        href="#"
+        aria-label="link to sedona page"
+        class="navObj"
+        id="obj1"
+        onclick="setCity(1)"
+        onclick="getLocationWeather('sedona')"
+      >
         <img
           src="./images/sedona-s.jpg"
           alt="red mountain in sedona"
@@ -19,7 +26,13 @@
         />
         <p>Sedona</p>
       </a>
-      <a href="#" aria-label="link to denver page" class="navObj" id="obj2">
+      <a
+        aria-label="link to denver page"
+        class="navObj"
+        id="obj2"
+        onclick="setCity(2)"
+        onclick="getLocationWeather('denver')"
+      >
         <img
           src="./images/denver-s.jpg"
           alt="city skyline with big mountain behind it"
@@ -27,7 +40,13 @@
         />
         <p>Denver</p>
       </a>
-      <a href="#" aria-label="link to seattle page" class="navObj" id="obj3">
+      <a
+        aria-label="link to seattle page"
+        class="navObj"
+        id="obj3"
+        onclick="setCity(3)"
+        onclick="getLocationWeather('seattle')"
+      >
         <img
           src="./images/seattle-xs.jpg"
           alt="city with the big needle in the center"
@@ -35,7 +54,13 @@
         />
         <p>Seattle</p>
       </a>
-      <a href="#" aria-label="link to honolulu page" class="navObj" id="obj4">
+      <a
+        aria-label="link to honolulu page"
+        class="navObj"
+        id="obj4"
+        onclick="setCity(4)"
+        onclick="getLocationWeather('honolulu')"
+      >
         <img
           src="./images/hawaii-s.jpg"
           alt="a city on the coastline of a curved beach"
@@ -43,7 +68,13 @@
         />
         <p>Honolulu</p>
       </a>
-      <a href="#" aria-label="link to portland page" class="navObj" id="obj5">
+      <a
+        aria-label="link to portland page"
+        class="navObj"
+        id="obj5"
+        onclick="setCity(5)"
+        onclick="getLocationWeather('portland')"
+      >
         <img
           src="./images/portland-s.jpg"
           alt="a city in between a forest and a mountain"
@@ -52,22 +83,8 @@
         <p>Portland</p>
       </a>
     </nav>
-
-    <!-- Small screen -->
-    <div id="small">
-      <label for="city-select">Choose a city:</label>
-      <select name="cities" id="city-select">
-        <option value="sedona">Sedona, AZ</option>
-        <option value="denver">Denver, CO</option>
-        <option value="seattle">Seattle, WA</option>
-        <option value="honolulu">Honolulu, HI</option>
-        <option value="portland">Portland, OR</option>
-      </select>
-    </div>
-
-    <!-- Content containers -->
-    <div id="content">
-      <!-- Sedona -->
+    <!-- Sedona -->
+    <div id="city1">
       <div class="main-container" id="sedona">
         <div class="item item-1">79°F​</div>
         <div class="item item-2">10:00 AM</div>
@@ -116,8 +133,10 @@
           ></iframe>
         </div>
       </div>
+    </div>
 
-      <!-- Denver -->
+    <!-- Denver -->
+    <div id="city2">
       <div class="main-container" id="denver">
         <div class="item item-1">79°F​</div>
         <div class="item item-2">10:00 AM</div>
@@ -166,17 +185,15 @@
           ></iframe>
         </div>
       </div>
+    </div>
 
-      <!-- Seattle -->
+    <!--Seattle -->
+    <div id="city3">
       <div class="main-container" id="seattle">
         <div class="item item-1">79°F​</div>
         <div class="item item-2">10:00 AM</div>
-        <div class="item item-3">
+        <div class="item item-3" id="weather-info">
           <h2>Seattle, WA</h2>
-          <p>Percipitation: 0%</p>
-          <p>Wind: 6mph</p>
-          <p>Humidity: 21%​</p>
-          <p>Conditions: Sunny​</p>
         </div>
         <div class="item item-4">
           <p>
@@ -216,8 +233,10 @@
           ></iframe>
         </div>
       </div>
+    </div>
 
-      <!-- Honolulu -->
+    <!-- Honolulu -->
+    <div id="city4">
       <div class="main-container" id="honolulu">
         <div class="item item-1">79°F​</div>
         <div class="item item-2">10:00 AM</div>
@@ -247,10 +266,18 @@
             Diamond Head backdrop attract millions of visitors each year.
           </p>
         </div>
-        <div class="item img-1"><img src="images/honolulu1.jpg" alt="" /></div>
-        <div class="item img-2"><img src="images/honolulu2.jpg" alt="" /></div>
-        <div class="item img-3"><img src="images/honolulu3.jpg" alt="" /></div>
-        <div class="item img-4"><img src="images/honolulu4.jpg" alt="" /></div>
+        <div class="item img-1">
+          <img src="images/honolulu1.jpg" alt="" />
+        </div>
+        <div class="item img-2">
+          <img src="images/honolulu2.jpg" alt="" />
+        </div>
+        <div class="item img-3">
+          <img src="images/honolulu3.jpg" alt="" />
+        </div>
+        <div class="item img-4">
+          <img src="images/honolulu4.jpg" alt="" />
+        </div>
         <div class="item video4">
           <iframe
             width="560"
@@ -263,8 +290,10 @@
           ></iframe>
         </div>
       </div>
+    </div>
 
-      <!-- Portland -->
+    <!-- Portland -->
+    <div id="city5">
       <div class="main-container" id="portland">
         <div class="item item-1">79°F​</div>
         <div class="item item-2">10:00 AM</div>
@@ -301,10 +330,18 @@
             and diverse offerings.
           </p>
         </div>
-        <div class="item img-1"><img src="images/portland1.jpg" alt="" /></div>
-        <div class="item img-2"><img src="images/portland2.jpg" alt="" /></div>
-        <div class="item img-3"><img src="images/portland3.jpg" alt="" /></div>
-        <div class="item img-4"><img src="images/portland4.jpg" alt="" /></div>
+        <div class="item img-1">
+          <img src="images/portland1.jpg" alt="" />
+        </div>
+        <div class="item img-2">
+          <img src="images/portland2.jpg" alt="" />
+        </div>
+        <div class="item img-3">
+          <img src="images/portland3.jpg" alt="" />
+        </div>
+        <div class="item img-4">
+          <img src="images/portland4.jpg" alt="" />
+        </div>
         <div class="item video4">
           <iframe
             width="560"
@@ -318,6 +355,20 @@
         </div>
       </div>
     </div>
+
+    <!-- Small screen -->
+    <div id="small">
+      <label for="city-select">Choose a city:</label>
+      <select name="cities" id="city-select" onchange="setCity(this)">
+        <option value="sedona">Sedona, AZ</option>
+        <option value="denver">Denver, CO</option>
+        <option value="seattle">Seattle, WA</option>
+        <option value="honolulu">Honolulu, HI</option>
+        <option value="portland">Portland, OR</option>
+      </select>
+    </div>
+
     <script src="jscript.js"></script>
+    <script src="weatherAPI.js"></script>
   </body>
 </html>
