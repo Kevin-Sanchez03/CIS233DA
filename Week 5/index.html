@@ -11,38 +11,46 @@
   <body>
     <!-- Navigation -->
     <nav>
-      <a href="#" aria-label="link to sedona page"
-        ><img src="./images/sedona-s.jpg" alt="red mountain in sedona" />
+      <a href="#" aria-label="link to sedona page" class="navObj" id="obj1">
+        <img
+          src="./images/sedona-s.jpg"
+          alt="red mountain in sedona"
+          class="navImg"
+        />
         <p>Sedona</p>
       </a>
-      <a href="#" aria-label="link to denver page"
-        ><img
+      <a href="#" aria-label="link to denver page" class="navObj" id="obj2">
+        <img
           src="./images/denver-s.jpg"
           alt="city skyline with big mountain behind it"
+          class="navImg"
         />
-        <p>Denver</p></a
-      >
-      <a href="#" aria-label="link to seattle page"
-        ><img
+        <p>Denver</p>
+      </a>
+      <a href="#" aria-label="link to seattle page" class="navObj" id="obj3">
+        <img
           src="./images/seattle-xs.jpg"
           alt="city with the big needle in the center"
+          class="navImg"
         />
-        <p>Seattle</p></a
-      >
-      <a href="#" aria-label="link to honolulu page"
-        ><img
+        <p>Seattle</p>
+      </a>
+      <a href="#" aria-label="link to honolulu page" class="navObj" id="obj4">
+        <img
           src="./images/hawaii-s.jpg"
-          alt="a city on the coasline of a curved beach"
+          alt="a city on the coastline of a curved beach"
+          class="navImg"
         />
-        <p>Honolulu</p></a
-      >
-      <a href="#" aria-label="link to portland page"
-        ><img
+        <p>Honolulu</p>
+      </a>
+      <a href="#" aria-label="link to portland page" class="navObj" id="obj5">
+        <img
           src="./images/portland-s.jpg"
-          alt="a city in between a forset and a mountain"
+          alt="a city in between a forest and a mountain"
+          class="navImg"
         />
-        <p>Portland</p></a
-      >
+        <p>Portland</p>
+      </a>
     </nav>
 
     <!-- Small screen -->
@@ -57,12 +65,10 @@
       </select>
     </div>
 
-    <!-- Medium screen -->
-    <div id="medium"></div>
-
-    <!-- Large screen -->
-    <div id="large">
-      <div class="main-container">
+    <!-- Content containers -->
+    <div id="content">
+      <!-- Sedona -->
+      <div class="main-container" id="sedona">
         <div class="item item-1">79°F​</div>
         <div class="item item-2">10:00 AM</div>
         <div class="item item-3">
@@ -110,6 +116,208 @@
           ></iframe>
         </div>
       </div>
+
+      <!-- Denver -->
+      <div class="main-container" id="denver">
+        <div class="item item-1">79°F​</div>
+        <div class="item item-2">10:00 AM</div>
+        <div class="item item-3">
+          <h2>Denver, CO</h2>
+          <p>Percipitation: 0%</p>
+          <p>Wind: 6mph</p>
+          <p>Humidity: 21%​</p>
+          <p>Conditions: Sunny​</p>
+        </div>
+        <div class="item item-4">
+          <p>
+            Denver is often referred to as the "Mile High City" because its
+            official elevation is exactly one mile (5,280 feet or 1,609 meters)
+            above sea level. This makes it one of the highest major cities in
+            the United States.
+          </p>
+        </div>
+        <div class="item item-5">
+          Denver serves as the gateway to the Rocky Mountains, providing easy
+          access to outdoor adventures like hiking, skiing, snowboarding, and
+          mountain biking. The city is located just a short drive away from some
+          of the best outdoor recreational areas in the United States.
+        </div>
+        <div class="item item-6">
+          <p>
+            Denver enjoys an abundance of sunshine throughout the year, with an
+            average of 300 sunny days annually. This makes it one of the
+            sunniest cities in the country, perfect for outdoor activities and
+            exploring the city's beautiful parks.
+          </p>
+        </div>
+        <div class="item img-1"><img src="images/denver1.jpg" alt="" /></div>
+        <div class="item img-2"><img src="images/denver2.jpg" alt="" /></div>
+        <div class="item img-3"><img src="images/denver3.jpg" alt="" /></div>
+        <div class="item img-4"><img src="images/denver4.jpg" alt="" /></div>
+        <div class="item video2">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Y_O8fsbTKA8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Seattle -->
+      <div class="main-container" id="seattle">
+        <div class="item item-1">79°F​</div>
+        <div class="item item-2">10:00 AM</div>
+        <div class="item item-3">
+          <h2>Seattle, WA</h2>
+          <p>Percipitation: 0%</p>
+          <p>Wind: 6mph</p>
+          <p>Humidity: 21%​</p>
+          <p>Conditions: Sunny​</p>
+        </div>
+        <div class="item item-4">
+          <p>
+            Seattle is often referred to as the "Emerald City" because of its
+            lush green surroundings. The city is known for its abundant trees,
+            parks, and proximity to natural landscapes such as the Olympic
+            Mountains and Mount Rainier.
+          </p>
+        </div>
+        <div class="item item-5">
+          Seattle is the birthplace of the international coffee chain Starbucks.
+          The first Starbucks store opened in Pike Place Market in 1971, and
+          today, Seattle is known for its thriving coffee culture and numerous
+          independent coffee shops.
+        </div>
+        <div class="item item-6">
+          <p>
+            One of Seattle's most iconic landmarks is the Space Needle. Built
+            for the 1962 World's Fair, it stands at 605 feet (184 meters) tall
+            and offers panoramic views of the city, Puget Sound, and the
+            surrounding mountains.
+          </p>
+        </div>
+        <div class="item img-1"><img src="images/seattle1.jpg" alt="" /></div>
+        <div class="item img-2"><img src="images/seattle2.jpg" alt="" /></div>
+        <div class="item img-3"><img src="images/seattle3.jpg" alt="" /></div>
+        <div class="item img-4"><img src="images/seattle4.jpg" alt="" /></div>
+        <div class="item video3">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Xn6-FyVdjqA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Honolulu -->
+      <div class="main-container" id="honolulu">
+        <div class="item item-1">79°F​</div>
+        <div class="item item-2">10:00 AM</div>
+        <div class="item item-3">
+          <h2>Honolulu, HI</h2>
+          <p>Percipitation: 0%</p>
+          <p>Wind: 6mph</p>
+          <p>Humidity: 21%​</p>
+          <p>Conditions: Sunny​</p>
+        </div>
+        <div class="item item-4">
+          <p>
+            The name "Honolulu" means "sheltered harbor" or "calm port" in the
+            Hawaiian language, reflecting its natural harbor and protected
+            location.
+          </p>
+        </div>
+        <div class="item item-5">
+          Honolulu is known for its stunning beaches, including the world-famous
+          Waikiki Beach. The golden sand, warm waters, and iconic Diamond Head
+          backdrop attract millions of visitors each year.
+        </div>
+        <div class="item item-6">
+          <p>
+            Honolulu is known for its stunning beaches, including the
+            world-famous Waikiki Beach. The golden sand, warm waters, and iconic
+            Diamond Head backdrop attract millions of visitors each year.
+          </p>
+        </div>
+        <div class="item img-1"><img src="images/honolulu1.jpg" alt="" /></div>
+        <div class="item img-2"><img src="images/honolulu2.jpg" alt="" /></div>
+        <div class="item img-3"><img src="images/honolulu3.jpg" alt="" /></div>
+        <div class="item img-4"><img src="images/honolulu4.jpg" alt="" /></div>
+        <div class="item video4">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/LQnFzajjeLI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Portland -->
+      <div class="main-container" id="portland">
+        <div class="item item-1">79°F​</div>
+        <div class="item item-2">10:00 AM</div>
+        <div class="item item-3">
+          <h2>Portland, OR</h2>
+          <p>Percipitation: 0%</p>
+          <p>Wind: 6mph</p>
+          <p>Humidity: 21%​</p>
+          <p>Conditions: Sunny​</p>
+        </div>
+        <div class="item item-4">
+          <p>
+            Portland is often referred to as the "City of Roses" due to its
+            ideal climate for growing roses. The International Rose Test Garden,
+            located in Washington Park, is one of Portland's most popular
+            attractions and is home to over 10,000 rose bushes representing more
+            than 650 varieties.
+          </p>
+        </div>
+        <div class="item item-5">
+          Portland is known for its extensive network of bike lanes and
+          bike-friendly infrastructure. In fact, the city has been recognized as
+          one of the most bike-friendly cities in the United States. It boasts
+          over 350 miles (560 kilometers) of bikeways and has a high percentage
+          of residents who commute to work by bicycle.
+        </div>
+        <div class="item item-6">
+          <p>
+            Portland is famous for its vibrant food scene and has a reputation
+            for being a hub of culinary creativity. The city is known for its
+            food carts, which offer a wide variety of international cuisines and
+            local delicacies. Portland's food carts have become a cultural
+            phenomenon, attracting both locals and visitors with their delicious
+            and diverse offerings.
+          </p>
+        </div>
+        <div class="item img-1"><img src="images/portland1.jpg" alt="" /></div>
+        <div class="item img-2"><img src="images/portland2.jpg" alt="" /></div>
+        <div class="item img-3"><img src="images/portland3.jpg" alt="" /></div>
+        <div class="item img-4"><img src="images/portland4.jpg" alt="" /></div>
+        <div class="item video4">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/gr2p3OSuxMo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
     </div>
+    <script src="jscript.js"></script>
   </body>
 </html>

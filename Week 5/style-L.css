@@ -47,6 +47,7 @@
     justify-content: left;
     align-items: start;
   }
+
   .main-container {
     margin-top: 1em;
     padding: 3em 2em 3em 2em;
@@ -58,7 +59,6 @@
     gap: 1em 3em;
     border: solid var(--color-primary-alt);
     background-color: var(--color-background);
-    /* grid-auto-rows: 100px; */
   }
   .item {
     background-color: var(--color-primary);
@@ -116,7 +116,10 @@
     padding: 0;
     filter: none;
   }
-  .video {
+  .video,
+  .video2,
+  .video3,
+  .video4 {
     grid-area: 5 / 4 / 6 / 6;
     background-color: var(--color-background);
     padding: 0;
@@ -131,6 +134,21 @@
     width: 380px;
   }
   #small {
+    display: none;
+  }
+  #sedona {
+    display: none;
+  }
+  #denver {
+    display: none;
+  }
+  #seattle {
+    display: none;
+  }
+  #honolulu {
+    display: none;
+  }
+  #portland {
     display: none;
   }
 }
