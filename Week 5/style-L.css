@@ -60,6 +60,7 @@
     border: solid var(--color-primary-alt);
     background-color: var(--color-background);
   }
+
   .item {
     background-color: var(--color-primary);
     color: var(--color-tertiary);

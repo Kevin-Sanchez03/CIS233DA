@@ -83,17 +83,30 @@
         <p>Portland</p>
       </a>
     </nav>
+
+    <!-- Small screen -->
+    <div id="small">
+      <label for="city-select">Choose a city:</label>
+      <select name="cities" id="city-select" onchange="setCity(this)">
+        <option value="sedona">Sedona, AZ</option>
+        <option value="denver">Denver, CO</option>
+        <option value="seattle">Seattle, WA</option>
+        <option value="honolulu">Honolulu, HI</option>
+        <option value="portland">Portland, OR</option>
+      </select>
+    </div>
+
     <!-- Sedona -->
     <div id="city1">
       <div class="main-container" id="sedona">
         <div class="item item-1">79°F​</div>
         <div class="item item-2">10:00 AM</div>
         <div class="item item-3">
-          <h2>Sedona, AZ</h2>
+          <!-- <h2>Sedona, AZ</h2>
           <p>Percipitation: 0%</p>
           <p>Wind: 6mph</p>
           <p>Humidity: 21%​</p>
-          <p>Conditions: Sunny​</p>
+          <p>Conditions: Sunny​</p> -->
         </div>
         <div class="item item-4">
           <p>
@@ -141,11 +154,11 @@
         <div class="item item-1">79°F​</div>
         <div class="item item-2">10:00 AM</div>
         <div class="item item-3">
-          <h2>Denver, CO</h2>
+          <!-- <h2>Denver, CO</h2>
           <p>Percipitation: 0%</p>
           <p>Wind: 6mph</p>
           <p>Humidity: 21%​</p>
-          <p>Conditions: Sunny​</p>
+          <p>Conditions: Sunny​</p> -->
         </div>
         <div class="item item-4">
           <p>
@@ -192,8 +205,12 @@
       <div class="main-container" id="seattle">
         <div class="item item-1">79°F​</div>
         <div class="item item-2">10:00 AM</div>
-        <div class="item item-3" id="weather-info">
-          <h2>Seattle, WA</h2>
+        <div class="item item-3">
+          <!-- <h2>Seattle, WA</h2>
+          <p>Percipitation: 0%</p>
+          <p>Wind: 6mph</p>
+          <p>Humidity: 21%​</p>
+          <p>Conditions: Sunny​</p> -->
         </div>
         <div class="item item-4">
           <p>
@@ -298,11 +315,11 @@
         <div class="item item-1">79°F​</div>
         <div class="item item-2">10:00 AM</div>
         <div class="item item-3">
-          <h2>Portland, OR</h2>
+          <!-- <h2>Portland, OR</h2>
           <p>Percipitation: 0%</p>
           <p>Wind: 6mph</p>
           <p>Humidity: 21%​</p>
-          <p>Conditions: Sunny​</p>
+          <p>Conditions: Sunny​</p> -->
         </div>
         <div class="item item-4">
           <p>
@@ -354,18 +371,6 @@
           ></iframe>
         </div>
       </div>
-    </div>
-
-    <!-- Small screen -->
-    <div id="small">
-      <label for="city-select">Choose a city:</label>
-      <select name="cities" id="city-select" onchange="setCity(this)">
-        <option value="sedona">Sedona, AZ</option>
-        <option value="denver">Denver, CO</option>
-        <option value="seattle">Seattle, WA</option>
-        <option value="honolulu">Honolulu, HI</option>
-        <option value="portland">Portland, OR</option>
-      </select>
     </div>
 
     <script src="jscript.js"></script>

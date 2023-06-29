@@ -1,41 +1,50 @@
-function getLocationWeather(location) {
-  var apiKey = "31eea274dbb42a560e587b785456144f";
-  var url =
-    "https://api.openweathermap.org/data/2.5/weather?q=" +
-    location +
-    "&appid=" +
-    apiKey;
+function getLocationWeather(city) {
+  const apiKey = "31eea274dbb42a560e587b785456144f";
 
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", url, true);
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      var response = JSON.parse(xhr.responseText);
-      displayWeather(response);
-    }
-  };
-  xhr.send();
+  // Fetch weather data for the specified city
+  fetch(
+    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      // Extract relevant weather information from the response
+      const temperature = Math.round(data.main.temp - 273.15); // Convert temperature to Celsius
+      const humidity = data.main.humidity;
+      const windSpeed = data.wind.speed;
+      const weatherDescription = data.weather[0].description;
+
+      // Update the weather information in the HTML document
+      const cityElement = document.getElementById(city);
+      if (cityElement) {
+        cityElement.querySelector(".item-1").textContent = `${temperature}°C`;
+        cityElement.querySelector(".item-3").innerHTML = `
+          <h2>${city.charAt(0).toUpperCase() + city.slice(1)}</h2>
+          <p>Percipitation: 0%</p>
+          <p>Wind: ${windSpeed}mph</p>
+          <p>Humidity: ${humidity}%</p>
+          <p>Conditions: ${weatherDescription}</p>
+        `;
+      }
+    })
+    .catch((error) => {
+      console.log("Error:", error);
+    });
 }
 
-function displayWeather(data) {
-  var weatherInfo = document.getElementById("weather-info");
-  weatherInfo.innerHTML = "";
-  var cityName = data.name;
-  var temperature = Math.round(data.main.temp - 273.15); // Convert temperature to Celsius
-  var description = data.weather[0].description;
-  var humidity = data.main.humidity;
+function setCity(cityNumber) {
+  const cities = ["sedona", "denver", "seattle", "honolulu", "portland"];
+  const city = cities[cityNumber - 1];
 
-  var cityElement = document.createElement("p");
-  cityElement.textContent = "City: " + cityName;
-  var temperatureElement = document.createElement("p");
-  temperatureElement.textContent = "Temperature: " + temperature + "°C";
-  var descriptionElement = document.createElement("p");
-  descriptionElement.textContent = "Description: " + description;
-  var humidityElement = document.createElement("p");
-  humidityElement.textContent = "Humidity: " + humidity + "%";
+  // Show the selected city and hide others
+  for (let i = 1; i <= 5; i++) {
+    const cityElement = document.getElementById(`city${i}`);
+    if (i === cityNumber) {
+      cityElement.style.display = "block";
+    } else {
+      cityElement.style.display = "none";
+    }
+  }
 
-  weatherInfo.appendChild(cityElement);
-  weatherInfo.appendChild(temperatureElement);
-  weatherInfo.appendChild(descriptionElement);
-  weatherInfo.appendChild(humidityElement);
+  // Fetch weather data for the selected city
+  getLocationWeather(city);
 }
